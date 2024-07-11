@@ -1,6 +1,19 @@
 import AddcustomerPage from "../../component/template/AddcustomerPage";
 
-
-export default function Index() {
+function index() {
+  return (
     <AddcustomerPage/>
+  )
 }
+
+export default index
+
+
+
+
+
+
+
+
+
+

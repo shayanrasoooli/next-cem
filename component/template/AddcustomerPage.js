@@ -1,6 +1,7 @@
 import React, {  useState } from 'react'
 import Form from '../module/Form'
 import { useRouter } from 'next/router'
+// import "../../styles/globals.css"
 
 function AddcustomerPage() {
 
@@ -45,7 +46,7 @@ function AddcustomerPage() {
     <div className='customer-page'>
       <h4>add customer</h4>
       <Form form={form} setForm={setForm} />
-      <div className='customer-page__button'>
+      <div className='customer-page__buttons'>
         <button className='first' onClick={cancelHandler}>Cancel</button>
         <button className='second' onClick={saveHandler}>Cancel</button>
       </div>
