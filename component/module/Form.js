@@ -1,8 +1,9 @@
-import React from 'react'
-
-function Form() {
+import ItemList from "./itemList"
+function Form({form , setForm}) {
   return (
-    <div>Form</div>
+    <div>
+        <ItemList form={form} setForm={setForm} /> 
+    </div>
   )
 }
 
