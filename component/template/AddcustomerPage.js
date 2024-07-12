@@ -48,7 +48,7 @@ function AddcustomerPage() {
       <Form form={form} setForm={setForm} />
       <div className='customer-page__buttons'>
         <button className='first' onClick={cancelHandler}>Cancel</button>
-        <button className='second' onClick={saveHandler}>Cancel</button>
+        <button className='second' onClick={saveHandler}>Save</button>
       </div>
 
         
