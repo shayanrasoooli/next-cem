@@ -1,5 +1,5 @@
 import Customer from "../../../models/Customers";
-import ConnectDB from "../../../utils/ConnectDb";
+import ConnectDB from "../../../utils/ConnectDB";
 
 export default async function handler(req , res) {
     try {
@@ -21,8 +21,8 @@ export default async function handler(req , res) {
             const customer = await Customer.create(data);
             res.status(201).json({status : "success" , message : "Data Created" , data: customer})
         } catch (error) {
-            console.log(error);
-            res.status(500).json({status : "failed" , message: " Error in  storing data in dataBase"})
+                console.log(error);
+                res.status(500).json({status : "failed" , message: " Error in  storing data in dataBase"})
         }
 
     }
